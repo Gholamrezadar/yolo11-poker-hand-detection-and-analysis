@@ -5,7 +5,7 @@ Poker Hand Detection using YOLO11.
 In this project, I utilized a playing cards [dataset](https://universe.roboflow.com/augmented-startups/playing-cards-ow27d/dataset/4) from Roboflow to train a YOLO11 model for detecting poker hands.
 After identifying the cards on the table and in the player's hand, the `analyze_hands.py` script is used to analyze the detected cards and calculate the probabilities of various poker hands occurring.
 
-![card detection demo](images/project_cover.png)
+![card detection demo](images/project_cover.jpg)
 
 Watch this [video](https://www.youtube.com/watch?v=8-8g-4-7-6w) on YouTube for a visual demonstration of the project.
 
@@ -18,7 +18,7 @@ The code for fine-tuning the model is available in the [Poker_Hand_Detection_YOL
 The code for doing inference and plotting the results is available in the [Poker_Hand_Inference.ipynb](Poker_Hand_Inference.ipynb) notebook.
 
 *Trained for 30 epochs in 3.78 hours on google colab's T4 GPU.*
-![card detection demo](images/demo_result.png)
+![card detection demo](images/demo_result.jpg)
 
 
 ### Training Results
@@ -74,13 +74,13 @@ Cards sorted from left to right: ['2C', '7H', '9D']
 I found out that because the model was trained using square images, it performs best on images with a square aspect ratio where the cards are around the center of the image.
 
 - Cards close to eachother
-    ![images/real_img_1_result.png](images/real_img_1_result.png)
+    ![images/real_img_1_result.jpg](images/real_img_1_result.jpg)
 - Cards farther apart
-    ![images/real_img_2_result.png](images/real_img_2_result.png)
+    ![images/real_img_2_result.jpg](images/real_img_2_result.jpg)
 - Closeup of the table
-    ![images/real_img_3_result.png](images/real_img_3_result.png)
+    ![images/real_img_3_result.jpg](images/real_img_3_result.jpg)
 - Table but squareified
-    ![images/real_img_4_result.png](images/real_img_4_result.png)
+    ![images/real_img_4_result.jpg](images/real_img_4_result.jpg)
 
 ## 2. Giving insights to the player about the poker hand
 
