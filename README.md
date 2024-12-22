@@ -5,7 +5,7 @@ Poker Hand Detection using YOLO11.
 In this project, I utilized a playing cards [dataset](https://universe.roboflow.com/augmented-startups/playing-cards-ow27d/dataset/4) from Roboflow to train a YOLO11 model for detecting poker hands.
 After identifying the cards on the table and in the player's hand, the `analyze_hands.py` script is used to analyze the detected cards and calculate the probabilities of various poker hands occurring.
 
-![card detection demo](images/demo_result.png)
+![card detection demo](images/project_cover.png)
 
 Watch this [video](https://www.youtube.com/watch?v=8-8g-4-7-6w) on YouTube for a visual demonstration of the project.
 
@@ -69,10 +69,18 @@ Cards sorted from left to right: ['2C', '7H', '9D']
 - Inference on a 3.4GHz CPU without ONNX: `~160ms`
 - Inference on a 3.4GHz CPU with ONNX: `~105ms`
 
-<!-- ### Other Demos -->
+### Other Demos
 
-<!-- - ![images/test_img_1.png](images/test_img_1_result.png) -->
-<!-- - ![images/test_img_3.png](images/test_img_3_result.png) -->
+I found out that because the model was trained using square images, it performs best on images with a square aspect ratio where the cards are around the center of the image.
+
+- Cards close to eachother
+    ![images/real_img_1_result.png](images/real_img_1_result.png)
+- Cards farther apart
+    ![images/real_img_2_result.png](images/real_img_2_result.png)
+- Closeup of the table
+    ![images/real_img_3_result.png](images/real_img_3_result.png)
+- Table but squareified
+    ![images/real_img_4_result.png](images/real_img_4_result.png)
 
 ## 2. Giving insights to the player about the poker hand
 
