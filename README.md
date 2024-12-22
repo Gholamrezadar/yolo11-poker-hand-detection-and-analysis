@@ -7,7 +7,7 @@ After identifying the cards on the table and in the player's hand, the `analyze_
 
 ![card detection demo](images/project_cover.jpg)
 
-Watch this [video](https://www.youtube.com/watch?v=8-8g-4-7-6w) on YouTube for a visual demonstration of the project.
+Watch this [video](https://youtube.com/shorts/IfgZjhWQHVs) on YouTube for a visual demonstration of the project.
 
 ## 1. Poker Hand Detection using YOLO11
 
