@@ -1,2 +1,4 @@
-__pycache__/
+__pycache__
 images/old/
+ae/
+*.mp4
